@@ -62,6 +62,16 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
+    static $rules = [
+		'name' => 'required',
+		'email' => 'required',
+    ];
+
+    protected $perPage = 20;
+
+
+
+
     public function adminlte_image()
     {
         return 'https://picsum.photos/300/300';

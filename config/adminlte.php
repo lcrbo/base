@@ -237,14 +237,14 @@ return [
         ],
 
         // Sidebar items:
-        [
+       /*  [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
-        ],
+        ], */
         [
             'text' => 'blog',
             'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'can'  => 'admin',
         ],
         [
             'text'        => 'pages',
@@ -253,11 +253,11 @@ return [
             'label'       => 4,
             'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
+        ['header' => 'Ajustes de Perfiles'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text' => 'Perfiles',
+            'route'  => 'users.index',
+            'icon' => 'fas fa-fw fa-users',
         ],
         [
             'text' => 'change_password',
